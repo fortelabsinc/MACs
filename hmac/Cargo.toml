@@ -10,11 +10,11 @@ keywords = ["crypto", "mac", "hmac", "digest"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-crypto-mac = "0.7"
+crypto-mac = { git = "https://github.com/fortelabsinc/traits", rev="eefd93f7f041b6a42d265a0eb2d6d87460dbe13e" }
 digest = "0.8"
 
 [dev-dependencies]
-crypto-mac = { version = "0.7", features = ["dev"] }
+crypto-mac = { git = "https://github.com/fortelabsinc/traits", rev="eefd93f7f041b6a42d265a0eb2d6d87460dbe13e", features = ["dev"] }
 md-5 = { version = "0.8", default-features = false }
 sha2 = { version = "0.8", default-features = false }
 

@@ -10,13 +10,13 @@ keywords = ["crypto", "mac", "pmac"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-crypto-mac = "0.7"
-block-cipher-trait = "0.6"
+crypto-mac = { git = "https://github.com/fortelabsinc/traits", rev="eefd93f7f041b6a42d265a0eb2d6d87460dbe13e" }
+block-cipher-trait = { git = "https://github.com/fortelabsinc/traits", rev="727a18f143cda9e0da7fc925722d77ae254d201a" }
 dbl = "0.2"
 
 [dev-dependencies]
-crypto-mac = { version = "0.7", features = ["dev"] }
-aes = "0.3"
+crypto-mac = { git = "https://github.com/fortelabsinc/traits", rev="eefd93f7f041b6a42d265a0eb2d6d87460dbe13e", features = ["dev"] }
+aes = { git = "https://github.com/fortelabsinc/block-ciphers", rev="6c5232fce16396363cdecf71dd5595be4c2ed426" }
 
 [badges]
 travis-ci = { repository = "RustCrypto/hashes" }

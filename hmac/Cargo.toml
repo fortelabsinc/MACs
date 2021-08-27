@@ -12,11 +12,11 @@ readme = "README.md"
 edition = "2018"
 
 [dependencies]
-crypto-mac = "0.10"
+crypto-mac = { git = "https://github.com/fortelabsinc/traits", rev="ca0ea3064459418a7a8f9945a5eda178982ad260" }
 digest = "0.9"
 
 [dev-dependencies]
-crypto-mac = { version = "0.10", features = ["dev"] }
+crypto-mac = { git = "https://github.com/fortelabsinc/traits", rev="ca0ea3064459418a7a8f9945a5eda178982ad260", features = ["dev"] }
 md-5 = { version = "0.9", default-features = false }
 sha2 = { version = "0.9", default-features = false }
 
